@@ -1,0 +1,28 @@
+.nav
+    &__menu
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        height: 70px
+        & > ul 
+            display: grid
+            grid-template-columns: repeat(4, 25%)
+            grid-column-gap: 0
+            height: 100%
+            border-top: 1px solid
+        & > ul > li 
+            height: 100%
+            width: 100%
+            border-right: 1px solid
+            overflow: hidden
+        & > ul > li:last-child
+            border: initial
+        & > ul > li > a 
+            display: flex 
+            justify-content: center
+            align-items: center
+            height: 100%
+            width: 100%
+    &__menu--favs
+        flex-direction: column
