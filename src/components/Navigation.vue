@@ -3,6 +3,7 @@
     <nav class="nav__config">
       <ul>
         <li>
+          <!-- when active add .nav__menu--active -->
           <router-link :to="{ name: 'config'}">
             _config
           </router-link>
@@ -12,25 +13,29 @@
     <nav class="nav__menu">
       <ul>
         <li>
+          <!-- when active add .nav__menu--active -->
           <router-link :to="{ name: 'home'}">
             _main
           </router-link>
         </li>
-        <li>
-          <router-link :to="{ name: 'favs'}" class="nav__menu--favs">
-            <span>* *</span>
-            <span>****</span>
-            <span>***</span>
-            <span>**</span>
-            <span>*</span>
+        <li class="nav__menu--favs">
+          <!-- when active add .nav__menu--active -->
+          <router-link :to="{ name: 'favs'}">
+            <span>, ,</span>
+            <span>,,,,</span>
+            <span>,,,</span>
+            <span>,,</span>
+            <span>,</span>
           </router-link>
         </li>
         <li>
+          <!-- when active add .nav__menu--active -->
           <router-link :to="{ name: 'map'}">
             _map
           </router-link>
         </li>
         <li>
+          <!-- when active add .nav__menu--active -->
           <router-link :to="{ name: 'info'}">
             _info
           </router-link>
