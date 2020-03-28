@@ -4,7 +4,7 @@
         PyConES_2020
     </h1>
     <h1>
-        >>> <strong>Granada</strong>
+        &gt;&gt;&gt; <strong>Granada</strong>
     </h1>
   </div>
 </template>

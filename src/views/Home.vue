@@ -1,11 +1,16 @@
 <template>
   <div class="home">
-    
+    <Navigation></Navigation>
   </div>
 </template>
 
 <script lang="ts">
+import Navigation from '@/components/Navigation.vue'
+
 export default {
-  name: 'Home'
+  name: 'home',
+  components: {
+    Navigation
+  }
 }
 </script>
