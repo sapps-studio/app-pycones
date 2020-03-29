@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="map">
     <Navigation></Navigation>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import Navigation from '@/components/Navigation.vue'
 
 export default {
-  name: 'home',
+  name: 'map',
   components: {
     Navigation
   }

@@ -1,0 +1,47 @@
+.nav
+    &__config
+        position: fixed
+        right: 0
+        top: 0
+        height: 45px
+        width: 25%
+        & > ul,
+        & > ul > li
+            height: 100%
+            width: 100%
+        & > ul > li > a
+            height: 100%
+            width: 100%
+            display: flex 
+            justify-content: center
+            align-items: center
+    &__menu
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        height: 45px
+        & > ul 
+            display: grid
+            grid-template-columns: repeat(4, 25%)
+            grid-column-gap: 0
+            height: 100%
+        & > ul > li 
+            height: 100%
+            width: 100%
+            overflow: hidden
+        & > ul > li > a 
+            display: flex 
+            justify-content: center
+            align-items: center
+            height: 100%
+            width: 100%
+        & > ul > .nav__menu--favs
+            color: $color__red
+            font-variation-settings: 'wght' 700
+            & > a 
+                flex-direction: column
+                font-size: 14px
+                line-height: 5px
+                & > span:last-child
+                    margin-bottom: 9px
