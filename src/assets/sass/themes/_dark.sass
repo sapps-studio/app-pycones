@@ -4,19 +4,25 @@ body
 .nav__menu > ul
     background-color: $color__black
     & > li > a
-        box-shadow: inset 1px 1px $color__white
+        box-shadow: inset 1px 1px $color__light-gray
     & > li:first-child > a
-        box-shadow: inset 0 1px $color__white
+        box-shadow: inset 0 1px $color__light-gray
 
 .nav__config
     background-color: $color__black
     & > ul > li > a
-        box-shadow: inset 1px -1px $color__white
+        box-shadow: inset 1px -1px $color__light-gray
     
 
 .header
-    box-shadow: $color__white
+    box-shadow: inset 0 -1px $color__light-gray
 
 .nav__menu--active
     background-color: $color__red
     color: $color__yellow
+
+.welcome__list-item
+    box-shadow: inset 0 -1px $color__light-gray
+
+.forward
+    box-shadow: inset 1px 0 $color__light-gray
