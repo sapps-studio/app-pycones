@@ -1,43 +1,129 @@
 <template>
   <div class="welcome">
     <nav>
-        <ul class="welcome__list">
-            <li class="welcome__list-item">
-                <router-link :to="{ name: 'home'}">
-                    &gt;&gt;&gt; Bienvenido
-                    <Forward></Forward>
-                </router-link>
+        <!-- welcome - language select -->
+        <ul>
+            <li class="welcome__lang">
+                <label>
+                    <input type="radio" name="lang" value="es">
+                    <div>
+                        <span>
+                            &gt;&gt;&gt; Bienvenido
+                        </span>
+                        <div class="forward">
+                            <p>
+                                -&gt;
+                            </p>
+                        </div>
+                    </div>
+                </label>
             </li>
-            <li class="welcome__list-item">
-                <router-link :to="{ name: 'home'}">
-                    &gt;&gt;&gt; Welcome
-                    <Forward></Forward>
-                </router-link>
+            <li class="welcome__lang">
+                <label>
+                    <input type="radio" name="lang" value="en">
+                    <div>
+                        <span>
+                            &gt;&gt;&gt; Welcome
+                        </span>
+                        <div class="forward">
+                            <p>
+                                -&gt;
+                            </p>
+                        </div>
+                    </div>
+                </label>
             </li>
-            <li class="welcome__list-item">
-                <router-link :to="{ name: 'home'}">
-                    &gt;&gt;&gt; Willkommen
-                    <Forward></Forward>
-                </router-link>
+            <li class="welcome__lang">
+                <label>
+                    <input type="radio" name="lang" value="de">
+                    <div>
+                        <span>
+                            &gt;&gt;&gt; Willkommen
+                        </span>
+                        <div class="forward">
+                            <p>
+                                -&gt;
+                            </p>
+                        </div>
+                    </div>
+                </label>
             </li>
-            <li class="welcome__list-item">
-                <router-link :to="{ name: 'home'}">
-                    &gt;&gt;&gt; Добро пожаловать
-                    <Forward></Forward>
-                </router-link>
+            <li class="welcome__lang">
+                <label>
+                    <input type="radio" name="lang" value="ru">
+                    <div>
+                        <span>
+                            &gt;&gt;&gt; Добро пожаловать
+                        </span>
+                        <div class="forward">
+                            <p>
+                                -&gt;
+                            </p>
+                        </div>
+                    </div>
+                </label>
             </li>
         </ul>
+        <!-- .welcome - language select -->
+
+        <div hidden>
+            <!-- welcome - theme select -->
+            <ul class="welcome__mode">
+                <li class="welcome__mode--item">
+                    <label class="welcome__mode--dark">
+                        <input type="radio" name="mode" value="dark">
+                        <span>
+                            _modoOscuro
+                        </span>
+                    </label>
+                </li>
+                <li class="welcome__mode--item">
+                    <label class="welcome__mode--light">
+                        <input type="radio" name="mode" value="light">
+                        <span>
+                            _modoClaro
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            <!-- .welcome - theme select -->
+
+            <!-- welcome forward / backward -->
+            <ul>
+                <li class="welcome__confirm">
+                    <router-link :to="{ name: 'home'}">
+                        <span>
+                            Empezar
+                        </span>
+                        <Forward></Forward>
+                    </router-link>
+                </li>
+                <li class="welcome__confirm">
+                    <!-- back to choose language -->
+                    <router-link :to="{ name: 'home'}">
+                        <Backward></Backward>
+                        <span>
+                            Volver
+                        </span>
+                    </router-link>
+                    <!-- .back to choose language -->
+                </li>
+            </ul>
+            <!-- .welcome forward / backward -->
+        </div>
     </nav>
   </div>
 </template>
 
 <script lang="ts">
-import Forward from "@/components/Forward.vue"
+    import Forward from "@/components/Forward.vue"
+    import Backward from "@/components/Backward.vue"
 
-export default {
-  name: 'welcome',
-  components: {
-    Forward
-  }
-}
+    export default {
+      name: 'welcome',
+      components: {
+        Forward,
+        Backward
+      }
+    }
 </script>
