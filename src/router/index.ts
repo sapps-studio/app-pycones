@@ -3,9 +3,9 @@ import VueRouter from 'vue-router'
 import Welcome from '../views/Welcome.vue'
 import Home from '../views/Home.vue'
 import Favs from '../views/Favs.vue'
-import Config from '../views/Config.vue'
 import Map from '../views/Map.vue'
 import Info from '../views/Info.vue'
+import Config from '../views/Config.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +16,7 @@ const routes = [
     component: Welcome
   },
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: Home
   },
@@ -39,6 +39,11 @@ const routes = [
     path: '/information',
     name: 'info',
     component: Info
+  },
+  {
+    path: '/configuration',
+    name: 'config',
+    component: Config
   }
 ]
 

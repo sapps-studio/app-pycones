@@ -1,0 +1,44 @@
+.config
+  &__mode
+    display: flex
+    &--dark,
+    &--light
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 50%
+      padding-left: 1rem
+      padding-right: 1rem
+      height: 3rem
+      & > input
+        position: absolute
+        display: block
+        left: 0
+        height: 100%
+        width: 100%
+        opacity: 0
+    &--dark
+      background-color: $color__black
+      color: $color__white
+    &--light
+      background-color: $color__white
+      color: $color__blue
+  &__lang
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    & > label
+      position: relative
+      margin-left: 1rem
+      margin-top: 1rem
+      min-height: calc(3rem - 1rem)
+      display: flex
+      align-items: center
+      padding: .5rem
+      & > input
+        position: absolute
+        display: block
+        height: 100%
+        width: 100%
+        left: 0
+        opacity: 0
