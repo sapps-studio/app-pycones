@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: 'Navigation'
-}
+  export default {
+    name: 'Navigation'
+  }
 </script>

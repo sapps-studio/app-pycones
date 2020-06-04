@@ -1,13 +1,13 @@
 <template>
-    <div class="backward">
-        <p>
-            &lt;-
-        </p>
-    </div>
+  <div class="backward border-shadow-right">
+    <p>
+      &lt;-
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
-    export default {
-        name: 'Backward'
-    }
+  export default {
+    name: 'Backward'
+  }
 </script>
