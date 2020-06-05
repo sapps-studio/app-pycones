@@ -2,7 +2,7 @@
   <div class="welcome">
     <nav>
       <!-- welcome - language select -->
-      <ul>
+      <ul class="border-shadow-top">
         <li class="welcome__lang border-shadow-bottom">
           <label>
             <input type="radio" name="lang" value="es">
@@ -68,7 +68,7 @@
 
         <div hidden>
           <!-- welcome - theme select -->
-          <ul class="welcome__mode border-bottom">
+          <ul class="welcome__mode border-y">
             <li class="welcome__mode--item">
               <label class="welcome__mode--dark">
                 <input type="radio" name="mode" value="dark">

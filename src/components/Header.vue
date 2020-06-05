@@ -1,5 +1,5 @@
 <template>
-  <div class="header border-shadow-bottom">
+  <div class="header">
     <h1>
       PyConES_2020
     </h1>

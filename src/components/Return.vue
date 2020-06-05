@@ -1,5 +1,5 @@
 <template>
-  <router-link class="return border-bottom" :to="{ name: 'home'}">
+  <router-link class="return border-shadow-y" :to="{ name: 'home'}">
     <div class="backward border-shadow-right">
       <p>
         &lt;-

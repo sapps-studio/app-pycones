@@ -18,25 +18,25 @@
         </label>
       </section>
       <section class="config__lang">
-        <label class="border-shadow-top-bottom-left">
+        <label class="border-shadow-y-left">
           <input type="radio">
           <span>
             _castellano
           </span>
         </label>
-        <label class="border-shadow-top-bottom-left">
+        <label class="border-shadow-y-left">
           <input type="radio">
           <span>
             _english
           </span>
         </label>
-        <label class="border-shadow-top-bottom-left">
+        <label class="border-shadow-y-left">
           <input type="radio">
           <span>
             _deutsch
           </span>
         </label>
-        <label class="border-shadow-top-bottom-left">
+        <label class="border-shadow-y-left">
           <input type="radio">
           <span>
             _русский

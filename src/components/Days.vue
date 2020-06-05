@@ -1,5 +1,5 @@
 <template>
-  <ul class="days border-shadow-bottom">
+  <ul class="days border-shadow-y bg-main">
     <li class="backward border-shadow-right">
       <router-link :to="{ name: 'home'}">
         &lt;-

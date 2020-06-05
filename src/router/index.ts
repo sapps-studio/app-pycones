@@ -21,7 +21,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/favorites',
+    path: '/favourites',
     name: 'favs',
     component: Favs
   },
@@ -39,11 +39,6 @@ const routes = [
     path: '/information',
     name: 'info',
     component: Info
-  },
-  {
-    path: '/configuration',
-    name: 'config',
-    component: Config
   }
 ]
 
