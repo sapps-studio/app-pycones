@@ -7,7 +7,7 @@
           <label>
             <input type="radio" name="lang" value="es">
             <div>
-              <span>
+              <span class="title-regular">
                 &gt;&gt;&gt; Bienvenido
               </span>
               <div class="forward border-shadow-left">
@@ -22,7 +22,7 @@
           <label>
             <input type="radio" name="lang" value="en">
             <div>
-              <span>
+              <span class="title-regular">
                 &gt;&gt;&gt; Welcome
               </span>
               <div class="forward border-shadow-left">
@@ -37,7 +37,7 @@
           <label>
             <input type="radio" name="lang" value="de">
             <div>
-              <span>
+              <span class="title-regular">
                 &gt;&gt;&gt; Willkommen
               </span>
               <div class="forward border-shadow-left">
@@ -52,7 +52,7 @@
           <label>
             <input type="radio" name="lang" value="ru">
             <div>
-              <span>
+              <span class="title-regular">
                 &gt;&gt;&gt; Добро пожаловать
               </span>
               <div class="forward border-shadow-left">
@@ -92,7 +92,7 @@
           <ul>
             <li class="welcome__confirm border-shadow-bottom">
               <router-link :to="{ name: 'home'}">
-                <span>
+                <span class="title-regular">
                   Empezar
                 </span>
                 <Forward></Forward>
@@ -102,7 +102,7 @@
               <!-- back to choose language -->
               <router-link :to="{ name: 'home'}">
                 <Backward></Backward>
-                <span>
+                <span class="title-regular">
                   Volver
                 </span>
               </router-link>

@@ -1,12 +1,7 @@
 <template>
-  <router-link class="return border-shadow-y" :to="{ name: 'home'}">
-    <div class="backward border-shadow-right">
-      <p>
-        &lt;-
-      </p>
-    </div>
+  <router-link class="backward" :to="{ name: 'home'}">
     <p>
-      _return
+      &lt;-
     </p>
   </router-link>
 </template>

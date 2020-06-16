@@ -33,6 +33,8 @@ body
 
 .border-shadow-y-left
   box-shadow: inset 1px 1px $color__light-gray, inset 0 -1px $color__light-gray
+.border-shadow-bottom-left
+  box-shadow: inset 1px -1px $color__light-gray
 
 .border-shadow-left
   box-shadow: inset 1px 0 $color__light-gray
@@ -46,4 +48,7 @@ body
 .bg-main
   background-color: $color__black
 .bg-favs
+  background-color: $color__blue
+
+.event__fav--check:checked ~ .event__fav--content
   background-color: $color__blue

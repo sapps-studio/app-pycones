@@ -38,6 +38,25 @@
               ]
             </p>
           </router-link>
+          <router-link :to="{ name: 'home'}" class="favs__array bg-favs border-shadow-y-left">
+            <p>
+              Charla1 = [
+            </p>
+            <ul class="favs__array--list favs-text">
+              <li>
+                "Título de la charla",
+              </li>
+              <li>
+                "Nombre del poniente",
+              </li>
+              <li>
+                "Lugar de la charla"
+              </li>
+            </ul>
+            <p>
+              ]
+            </p>
+          </router-link>
         </li>
         <li>
           <p class="favs__list--time">
