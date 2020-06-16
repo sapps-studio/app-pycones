@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Welcome from '../views/Welcome.vue'
-import Home from '../views/Home.vue'
-import Favs from '../views/Favs.vue'
-import Map from '../views/Map.vue'
-import Info from '../views/Info.vue'
-import Config from '../views/Config.vue'
+import Welcome from '@/views/Welcome.vue'
+import Home from '@/views/Home.vue'
+import Favs from '@/views/Favs.vue'
+import Map from '@/views/Map.vue'
+import Info from '@/views/Info.vue'
+import Config from '@/views/Config.vue'
+import Event from '@/views/Event.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/favorites',
+    path: '/favourites',
     name: 'favs',
     component: Favs
   },
@@ -41,9 +42,9 @@ const routes = [
     component: Info
   },
   {
-    path: '/configuration',
-    name: 'config',
-    component: Config
+    path: '/event',
+    name: 'event',
+    component: Event
   }
 ]
 

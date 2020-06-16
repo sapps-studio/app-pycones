@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-    <nav class="nav__config">
+    <nav class="nav__config bg-main">
       <ul>
         <li>
           <!-- when active add .nav__menu--active -->
@@ -10,7 +10,7 @@
         </li>
       </ul>
     </nav>
-    <nav class="nav__menu">
+    <nav class="nav__menu bg-main">
       <ul>
         <li>
           <!-- when active add .nav__menu--active -->
@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: 'Navigation'
-}
+  export default {
+    name: 'Navigation'
+  }
 </script>

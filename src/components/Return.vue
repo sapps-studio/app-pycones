@@ -1,13 +1,13 @@
 <template>
-  <div class="backward border-shadow-right">
+  <router-link class="backward" :to="{ name: 'home'}">
     <p>
       &lt;-
     </p>
-  </div>
+  </router-link>
 </template>
 
 <script lang="ts">
   export default {
-    name: 'Backward'
+    name: 'Return'
   }
 </script>

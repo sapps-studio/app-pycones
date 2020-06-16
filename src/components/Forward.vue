@@ -1,13 +1,13 @@
 <template>
-    <div class="forward">
-        <p>
-            -&gt;
-        </p>
-    </div>
+  <div class="forward border-shadow-left">
+    <p>
+      -&gt;
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
-    export default {
-        name: 'Forward'
-    }
+  export default {
+    name: 'Forward'
+  }
 </script>
