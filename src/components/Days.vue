@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul class="days border-shadow-y bg-main">
+  <nav class="days">
+    <ul class="days__list border-shadow-y bg-main">
       <li class="backward border-shadow-right">
         <router-link :to="{ name: 'home'}">
           &lt;-

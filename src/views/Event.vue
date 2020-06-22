@@ -22,7 +22,7 @@
           Título del evento
         </h1>
         <h2 class="text-main">
-          &gt;&gt;&gt; Nombre del poniento
+          &gt;&gt;&gt; Nombre del poniente
         </h2>
       </div>
       <div class="event__content--description">
@@ -42,7 +42,7 @@
         <input name="fav" type="checkbox" class="event__fav--check">
         <div class="event__fav--content border-shadow-y-left">
           <p>
-            misFavoritos.<span class="func-text">pop(</span><span class="func-text">append(</span>tipo de evento<span class="func-text">)</span>
+            misFavoritos.<span class="func-text">pop(</span><span class="func-text">append(</span>charla<span class="func-text">)</span>
           </p>
         </div>
       </label>

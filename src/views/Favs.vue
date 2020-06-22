@@ -19,68 +19,50 @@
           <p class="favs__list--time">
             10:30_11:00
           </p>
-          <router-link :to="{ name: 'home'}" class="favs__array bg-favs border-shadow-y-left">
-            <p>
-              Charla1 = [
-            </p>
-            <ul class="favs__array--list favs-text">
-              <li>
-                "Título de la charla",
-              </li>
-              <li>
-                "Nombre del poniente",
-              </li>
-              <li>
-                "Lugar de la charla"
-              </li>
-            </ul>
-            <p>
-              ]
-            </p>
-          </router-link>
-          <router-link :to="{ name: 'home'}" class="favs__array bg-favs border-shadow-y-left">
-            <p>
-              Charla1 = [
-            </p>
-            <ul class="favs__array--list favs-text">
-              <li>
-                "Título de la charla",
-              </li>
-              <li>
-                "Nombre del poniente",
-              </li>
-              <li>
-                "Lugar de la charla"
-              </li>
-            </ul>
-            <p>
-              ]
-            </p>
-          </router-link>
-        </li>
-        <li>
-          <p class="favs__list--time">
-            10:30_11:00
-          </p>
-          <router-link :to="{ name: 'home'}" class="favs__array bg-favs border-shadow-y-left">
-            <p>
-              Charla1 = [
-            </p>
-            <ul class="favs__array--list favs-text">
-              <li>
-                "Título de la charla",
-              </li>
-              <li>
-                "Nombre del poniente",
-              </li>
-              <li>
-                "Lugar de la charla"
-              </li>
-            </ul>
-            <p>
-              ]
-            </p>
-          </router-link>
+          <ul>
+            <li class="favs__array">
+              <router-link :to="{ name: 'event'}" class="bg-favs border-shadow-y-left">
+                <p>
+                  Charla1 = [
+                </p>
+                <ul class="favs__array--list">
+                  <li>
+                    <span class="favs-text">"Título de la charla"</span><span>,</span>
+                  </li>
+                  <li>
+                    <span class="favs-text">"Nombre del poniente"</span><span>,</span>
+                  </li>
+                  <li>
+                    <span class="favs-text">"Lugar de la charla"</span><span>,</span>
+                  </li>
+                </ul>
+                <p>
+                  ]
+                </p>
+              </router-link>
+            </li>
+            <li class="favs__array">
+              <router-link :to="{ name: 'event'}" class="bg-favs border-shadow-y-left">
+                <p>
+                  Charla1 = [
+                </p>
+                <ul class="favs__array--list">
+                  <li>
+                    <span class="favs-text">"Título de la charla"</span><span>,</span>
+                  </li>
+                  <li>
+                    <span class="favs-text">"Nombre del poniente"</span><span>,</span>
+                  </li>
+                  <li>
+                    <span class="favs-text">"Lugar de la charla"</span><span>,</span>
+                  </li>
+                </ul>
+                <p>
+                  ]
+                </p>
+              </router-link>
+            </li>
+          </ul>
         </li>
       </ul>
       <!-- .favs list -->
