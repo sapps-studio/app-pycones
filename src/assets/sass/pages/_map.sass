@@ -1,0 +1,31 @@
+.map
+  &__wrapper
+    height: calc(100vh - #{$header} - #{$nav} - 4rem)
+  &__map
+    .leaflet-top,
+    .leaflet-left
+      display: none
+
+  &__legend
+    position: fixed
+    bottom: $main-height
+    left: 0
+    right: 0
+    &--button
+      @include flex(space-between, center, row)
+      height: $main-height
+      width: 100%
+      padding: unset
+      & > p
+        padding:
+          left: 1rem
+          right: 1rem
+      & > div
+        width: $main-height
+        height: $main-height
+        @include flex(center, center, row)
+        & > p
+          transform-origin: center
+          transform: rotate(90deg)
+          color: $color__red
+          font-size: 1.5rem
