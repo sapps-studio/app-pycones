@@ -8,7 +8,7 @@
             <input type="radio" name="lang" value="es">
             <div>
               <span class="title-regular">
-                &gt;&gt;&gt; Bienvenido
+                <span class="welcome__lang--flag">🇪🇸</span> Bienvenido
               </span>
               <div class="forward border-shadow-left">
                 <p>
@@ -23,7 +23,7 @@
             <input type="radio" name="lang" value="en">
             <div>
               <span class="title-regular">
-                &gt;&gt;&gt; Welcome
+                <span class="welcome__lang--flag">🇬🇧</span> Welcome
               </span>
               <div class="forward border-shadow-left">
                 <p>
@@ -38,7 +38,7 @@
             <input type="radio" name="lang" value="de">
             <div>
               <span class="title-regular">
-                &gt;&gt;&gt; Willkommen
+                <span class="welcome__lang--flag">🇩🇪</span> Willkommen
               </span>
               <div class="forward border-shadow-left">
                 <p>
@@ -53,7 +53,7 @@
             <input type="radio" name="lang" value="ru">
             <div>
               <span class="title-regular">
-                &gt;&gt;&gt; Добро пожаловать
+                <span class="welcome__lang--flag">🇷🇺</span> Добро пожаловать
               </span>
               <div class="forward border-shadow-left">
                 <p>

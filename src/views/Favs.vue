@@ -4,7 +4,7 @@
     <Days></Days>
     <div class="container">
       <!-- if no favs added -->
-      <section hidden class="favs__empty">
+      <section  class="favs__empty">
         <p>
         &gt;&gt;&gt; <span class="func-text">len(</span>misFavoritos<span class="func-text">)</span>
         </p>
@@ -14,7 +14,7 @@
       </section>
       <!-- .if no favs added -->
       <!-- favs list -->
-      <ul class="favs__list">
+      <ul hidden class="favs__list">
         <li>
           <p class="favs__list--time">
             10:30_11:00
