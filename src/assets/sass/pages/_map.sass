@@ -5,13 +5,49 @@
     .leaflet-top,
     .leaflet-left
       display: none
-
+      .leaflet-control-attribution
+        font-family: 'text', sans-serif
+        font-size: .6rem !important
+        padding: .25rem 1rem
+        line-height: 135%
+        background-color: $color__white !important
+        box-shadow: inset 1px 1px $color__black !important
+        margin-left: 1rem !important
+        & > a
+          color: $color__blue !important
+      .leaflet-marker-icon
+        height: 1.75rem !important
+        width: 1.75rem !important
+      .leaflet-tooltip
+        height: 1.75rem
+        width: 1.75rem
+        padding: unset
+        font-size: 1.25rem
+        font-family: 'text', sans-serif
+        font-weight: 500
+        background-color: transparent
+        border: unset
+        border-radius: unset
+        box-shadow: unset
+        &::before
+          display: none
+  &__tooltip
+    @include flex(center, center, row)
+    height: 1.75rem
+    width: 1.75rem
+    background-color: $color__yellow
+    box-shadow: inset 1px 1px $color__black, inset -1px -1px $color__black
   &__legend
-    position: fixed
-    bottom: $main-height
+    position: absolute
     left: 0
     right: 0
-    &--button
+    bottom: $main-height
+    min-height: $main-height
+    z-index: 1000
+    &--header
+      position: sticky
+      position: -webkit-sticky
+      top: 0
       @include flex(space-between, center, row)
       height: $main-height
       width: 100%
@@ -26,6 +62,22 @@
         @include flex(center, center, row)
         & > p
           transform-origin: center
-          transform: rotate(90deg)
           color: $color__red
           font-size: 1.5rem
+          transition: transform .5s ease-in-out
+    &--list-wrapper
+      transition: .5s ease-in-out
+    &--list
+      padding: 1rem
+      column-count: 2
+      column-gap: 1rem
+      overflow-y: auto
+      & > li
+        margin-bottom: .5rem
+
+.legend-closed
+  max-height: 0
+  overflow-y: hidden
+.legend-opened
+  max-height: calc(50vh - #{$main-height} * 2)
+  overflow-y: auto
