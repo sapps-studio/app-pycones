@@ -35,6 +35,7 @@
           Leyenda
         </p>
         <div class="border-shadow-left">
+
           <!-- .arrow-closed .arrow-open -->
           <p
             :class="[ mapOpen ? 'arrow-open' : 'arrow-closed' ]"
@@ -75,6 +76,7 @@
   import Navigation from '@/components/Navigation.vue'
 
   import { latLng } from 'leaflet';
+
   import { LMap, LTileLayer, LMarker, LTooltip } from 'vue2-leaflet';
   import 'leaflet/dist/leaflet.css';
 

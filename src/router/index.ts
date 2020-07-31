@@ -7,6 +7,7 @@ import Map from '@/views/Map.vue'
 import Info from '@/views/Info.vue'
 import Config from '@/views/Config.vue'
 import Event from '@/views/Event.vue'
+import DayDetailed from '@/views/DayDetailed.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ const routes = [
     path: '/event',
     name: 'event',
     component: Event
+  },
+  {
+    path: '/day-detailed',
+    name: 'dayDetailed',
+    component: DayDetailed
   }
 ]
 

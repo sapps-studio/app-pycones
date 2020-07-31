@@ -3,34 +3,34 @@
     height: calc(100vh - #{$header} - #{$nav} - 4rem)
   &__map
     .leaflet-top,
-  .leaflet-left
-    display: none
-    .leaflet-control-attribution
-      font-family: 'text', sans-serif
-      font-size: .6rem !important
-      padding: .25rem 1rem
-      line-height: 135%
-      background-color: $color__white !important
-      box-shadow: inset 1px 1px $color__black !important
-      margin-left: 1rem !important
-      & > a
-        color: $color__blue !important
-    .leaflet-marker-icon
-      height: 1.75rem !important
-      width: 1.75rem !important
-    .leaflet-tooltip
-      height: 1.75rem
-      width: 1.75rem
-      padding: unset
-      font-size: 1.25rem
-      font-family: 'text', sans-serif
-      font-weight: 500
-      background-color: transparent
-      border: unset
-      border-radius: unset
-      box-shadow: unset
-      &::before
-        display: none
+    .leaflet-left
+      display: none
+      .leaflet-control-attribution
+        font-family: 'text', sans-serif
+        font-size: .6rem !important
+        padding: .25rem 1rem
+        line-height: 135%
+        background-color: $color__white !important
+        box-shadow: inset 1px 1px $color__black !important
+        margin-left: 1rem !important
+        & > a
+          color: $color__blue !important
+      .leaflet-marker-icon
+        height: 1.75rem !important
+        width: 1.75rem !important
+      .leaflet-tooltip
+        height: 1.75rem
+        width: 1.75rem
+        padding: unset
+        font-size: 1.25rem
+        font-family: 'text', sans-serif
+        font-weight: 500
+        background-color: transparent
+        border: unset
+        border-radius: unset
+        box-shadow: unset
+        &::before
+          display: none
   &__tooltip
     @include flex(center, center, row)
     height: 1.75rem
